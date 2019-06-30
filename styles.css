@@ -1,0 +1,84 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html, body
+{
+    background: black;
+    color: white;
+    font-family: 'VT323', monospace;
+    font-size: 24px;
+    height: 100%;
+}
+
+#container
+{
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+header, footer
+{
+    flex: 0 1 auto;
+}
+
+main
+{
+    flex: 1 1 auto;
+}
+
+header h1
+{
+    text-align: center;
+    font-size: 24px;
+}
+
+nav ul li, nav label
+{
+    display: inline;
+    background: lime;
+    color: black;
+    padding: 0 1ch;
+}
+
+#tabs input[type="radio"]
+{
+    display: none;
+}
+
+#tabs label
+{
+    margin: 0 0.5ch;
+    background: gray;
+}
+
+#tabs input[type="radio"]:checked + label
+{
+    background: lime;
+}
+
+nav a
+{
+    text-decoration: none;
+    color: inherit;
+    cursor: inherit;
+}
+
+section
+{
+    display: none;
+}
+
+#welcome
+{
+    display: block;
+}
+
+section, .editor
+{
+    height: 100%;
+}
