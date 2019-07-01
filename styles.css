@@ -12,13 +12,13 @@ html, body
     font-family: 'VT323', monospace;
     font-size: 24px;
     height: 100%;
+    display: flex;
+    flex-flow: column;
 }
 
 #container
 {
     height: 100%;
-    display: flex;
-    flex-flow: column;
 }
 
 header, footer
@@ -37,12 +37,41 @@ header h1
     font-size: 24px;
 }
 
-nav ul li, nav label
+nav>ul>li
 {
-    display: inline;
+    display: inline-block;
+}
+
+nav ul>li, nav label
+{
     background: lime;
     color: black;
     padding: 0 1ch;
+}
+
+nav>ul>li>ul
+{
+    display: none;
+    z-index: 1;
+    position: absolute;
+    margin: 0 -1ch;
+}
+
+nav>ul>li:hover>ul
+{
+    display: block;
+}
+
+nav>ul>li>ul>li
+{
+    display: block;
+    min-width: 200px;
+    background: gray;
+}
+
+nav>ul>li>ul>li:hover
+{
+    background: lime;
 }
 
 #tabs input[type="radio"]
@@ -52,7 +81,6 @@ nav ul li, nav label
 
 #tabs label
 {
-    margin: 0 0.5ch;
     background: gray;
 }
 
@@ -66,11 +94,14 @@ nav a
     text-decoration: none;
     color: inherit;
     cursor: inherit;
+    display: block;
 }
 
 section
 {
     display: none;
+    overflow: auto;
+    position: relative;
 }
 
 #welcome
@@ -78,7 +109,14 @@ section
     display: block;
 }
 
-section, .editor
+section, .editor, .basic_out
 {
     height: 100%;
+}
+
+.basic_out
+{
+    image-rendering: pixelated;
+    width: 100%;
+    position: absolute;
 }

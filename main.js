@@ -46,7 +46,7 @@ function newEditor(i)
 function newRun(i)
 {
     i = parseInt(i, 10);
-    $('main').append('<section id="run-'+i+'"><canvas class="basic_out" width="640" height="480"></canvas></section>');
+    $('main').append('<section id="run-'+i+'"><canvas class="basic_out" width="1280" height="960"></canvas></section>');
     //$('#tabs ul').append('<li><a href="#run-'+i+'" onclick="run('+i+')">Run '+i+'</a></li>');
     $('#tabs').append('<input name="tabs" type="radio" id="tab-run-'+i+'" class="tab-input"/>');
     $('#tabs').append('<label for="tab-run-'+i+'" class="tab-label">Run</label>');
