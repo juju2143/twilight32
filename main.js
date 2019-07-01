@@ -59,3 +59,11 @@ function newRun(i)
         }
     });
 }
+
+$(window).on('resize', function()
+{
+    editors.forEach(function(e)
+    {
+        e.layout();
+    });
+});
