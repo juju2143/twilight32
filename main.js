@@ -6,6 +6,7 @@ var editors = [];
 function main() {
     newEditor(0);
     newRun(0);
+    $('#loading').css('display', 'none');
 }
 
 function run(i) {

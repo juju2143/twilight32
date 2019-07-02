@@ -16,6 +16,14 @@ html, body
     flex-flow: column;
 }
 
+#loading
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+
 #container
 {
     height: 100%;
