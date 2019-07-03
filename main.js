@@ -68,3 +68,11 @@ $(window).on('resize', function()
         e.layout();
     });
 });
+
+$('.button-close').on('click', function(){
+    $(this).closest('.dialog').css('display', 'none');
+});
+
+$('#menu-about').on('click', function(){
+    $('#about').css('display', 'block');
+});

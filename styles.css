@@ -112,6 +112,46 @@ section
     position: relative;
 }
 
+.dialog
+{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    background: gray;
+    width: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.dialog h2
+{
+    text-align: center;
+    font-size: inherit;
+    background: lime;
+    color: black;
+}
+
+.dialog p
+{
+    margin: 1em 1ch;
+}
+
+.dialog button
+{
+    display: block;
+    font: inherit;
+    padding: 0 2ch;
+    text-align: center;
+    background: lime;
+    color: black;
+}
+
+.center
+{
+    text-align: center;
+}
+
 #welcome
 {
     display: block;

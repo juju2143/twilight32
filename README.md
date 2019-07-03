@@ -1,10 +1,12 @@
 # twilight32
 
+![Twilight32](img/twilight32.png)
+
 Twilight32 is a fun and retro-looking web-based IDE not unlike fantasy consoles such as PICO-8, aimed at retro game enthusiasts who want to develop on a platform similar to old computers from the 80's.
 
 ## Features
 
-- Modern code editor with modern features based on [monaco-editor](https://microsoft.github.io/monaco-editor/)
+- Modern code editor with modern features from [monaco-editor](https://microsoft.github.io/monaco-editor/)
 - [wwwBASIC](https://github.com/google/wwwbasic)
 - Sprite editor
 - Music tracker with MIDI support
